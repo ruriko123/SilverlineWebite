@@ -2,7 +2,7 @@ import React from 'react'
 
 function Accordions() {
     return (
-        <main className="container">
+        <main className="container m-auto">
             <details>
                 <summary role="button" className="secondary">Reputation</summary>
                 <p>A company with a good track record and positive reviews from past customers.</p>

@@ -1,14 +1,19 @@
 .top-title{
-    color: #ffffff;
-    font-family: 'Poppins',sans-serif;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    color: #ffffff;  
+    // font-family: 'Poppins',sans-serif;
+    font-family: Roboto,"Helvetica Neue",Arial,sans-serif;
+    // background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
 };
 .second-title{
     color:#080a4d;
+    // color:white;
+    font-size:medium;
     font-family: 'Poppins',sans-serif;
     
     // background: linear-gradient(to bottom,rgb(100, 21, 53)    0%, rgba(0, 0, 0, 0) 100%);
 };
 .third-title{
     color:#5b0427;
+    font-size:medium;
+    // color:white
 }

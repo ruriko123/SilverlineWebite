@@ -1,8 +1,10 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import 'rsuite/dist/rsuite.min.css';
 import {Panel, Placeholder} from 'rsuite';
 import "./NavbarBottom.scss"
-import {List, Whisper, Button, ButtonToolbar} from 'rsuite';
+import {Animation, List, Whisper, Button, ButtonToolbar} from 'rsuite';
+
+
 
 const Overlay = React.forwardRef(({
     style,
@@ -23,25 +25,35 @@ const Overlay = React.forwardRef(({
 
     return (
         <div {...rest} style={styles} ref={ref}>
-              <List hover>
-    <List.Item href="/service1">Service1</List.Item>
-    <List.Item  href="/service2">Service2</List.Item>
-    <List.Item   href="/service3">Service3</List.Item>
-    <List.Item  href="/service4">Service4</List.Item>
-  </List>
+            <List hover>
+                <List.Item href="/service1">Service1</List.Item>
+                <List.Item href="/service2">Service2</List.Item>
+                <List.Item href="/service3">Service3</List.Item>
+                <List.Item href="/service4">Service4</List.Item>
+            </List>
         </div>
     );
 });
 
 function NavbarBottom() {
+
+
+
+
     return (
-        <div className="d-flex justify-content-center m-2 ">
+        <div className="d-flex justify-content-center m-2 align-items-center">
             <Panel shaded={true} bodyFill={false} className="rounded">
-                <h2 className='top-title shadow-lg p-1 mb-5 rounded'>
-                    Fancy display heading
-                </h2>
-                <h3 className='second-title'>Heading 3</h3>
-                <h4 className='third-title'>Heading 4</h4>
+                <Animation.Slide   transitionAppear={false} in={true} placement="bottom" timeout={1400} >
+                <h1 className="text-black text-4xl font-bold uppercase relative inline-block">
+                    Text Effect 1
+                </h1>
+                </Animation.Slide>
+
+                <h3 className='second-title'>Premium Storage Space and Storage Solutions</h3>
+                <Animation.Slide transitionAppear={false} in={true} placement="bottom" timeout={1400}>
+                <h4 className='third-title'>Built for Individuals, Startups, e-Commerce & Companies</h4>
+                </Animation.Slide>
+                
                 <ButtonToolbar
                     style={{
                     background: 'transparent',

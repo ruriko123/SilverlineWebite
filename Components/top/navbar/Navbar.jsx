@@ -21,7 +21,7 @@ function Navbarcomponent() {
                         height="60"
                         className="d-inline-block align-top"/>
                 </Navbar.Brand>
-                <Nav pullright className='d-flex bd-highlight mb-3'>
+                <Nav  className='pull-right d-flex bd-highlight mb-3'>
                     <Nav.Link  as={Link} className="m-auto" href="/home">Home</Nav.Link>
                     <Nav.Link  as={Link} className="m-auto" href="/features">About</Nav.Link>
                     <Nav.Link  as={Link} className="m-auto" href="/pricing">Services</Nav.Link>

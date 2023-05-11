@@ -3,7 +3,7 @@ import React from 'react'
 function Form() {
     return (
 
-        <div className="form">
+        <div className="form m-auto mt-4">
             <form>
                 <kbd> <strong>Contact Us</strong></kbd>
 
