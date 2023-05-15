@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Divider } from 'rsuite';
 
 function Form() {
     return (
@@ -9,7 +10,7 @@ function Form() {
 
 
                 <div className="grid">
-                    <label htmlFor="firstname" data-tooltip="firstname" data-placement="top">
+                    <label htmlFor="firstname" data-tooltip="First name" data-placement="top">
                         First name
                         <input
                             type="text"
@@ -18,7 +19,7 @@ function Form() {
                             placeholder="First name"
                             required/>
                     </label>
-                    <label htmlFor="lastname" data-tooltip="lastname" data-placement="top">
+                    <label htmlFor="lastname" data-tooltip="Last name" data-placement="top">
                         Last name
                         <input
                             type="text"
@@ -28,22 +29,24 @@ function Form() {
                             required/>
                     </label>
                 </div>
-                <label htmlFor="email" data-tooltip="Email" data-placement="top">Email address</label>
+                <label htmlFor="email" data-tooltip="Email" data-placement="top">Email address
                 <input
                     type="email"
                     id="email"
                     name="email"
                     placeholder="Email address"
                     required/>
+                    </label>
                 <small data-tooltip=":)">We'll never share your email with anyone else.</small>
-                <label data-tooltip="Phone Number" data-placement="top">Phone Number</label>
+                {/* <Divider className="mb-5"></Divider> */}
+                <label data-tooltip="Phone Number" data-placement="top">Phone Number
                 <input
                     type="tel"
                     id="phoneNumber"
                     name="Phone Number"
                     placeholder="Phone Number"
                     required/>
-
+                </label>
                 <div className="grid">
 
                     <label htmlFor="date" data-tooltip="Date" data-placement="top">Date
