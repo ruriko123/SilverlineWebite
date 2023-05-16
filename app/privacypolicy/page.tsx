@@ -5,20 +5,16 @@ import "@picocss/pico";
 import "@styles/globals.css";
 import Footer from "@/Components/footer/Footer";
 import Scrolltotop from "@/Components/scrolltotop/Scrolltotop";
-import AboutBottommiddle from "@/Components/middle/AboutBottommiddle";
-import Countupcomponent from '@/Components/About/AboutCount/Countupcomponent';
 import Contactus from "@/Components/ContactUS/Contactus";
-import AboutTimeline from './../../Components/About/AboutTimeline/AboutTimeline';
+import PrivacypolicyBottomMiddle from "@/Components/PrivacyPolicy/PrivacypolicyBottomMiddle/PrivacypolicyBottomMiddle";
+import PrivacyPolicyContents from "@/Components/PrivacyPolicy/PrivacypolicyBottomMiddle/PrivacyPolicyContents/PrivacyPolicyContents";
 
-
-export default function About() {
+export default function Faqs() {
   return (
     <div className="App">
-     <Navbarcomponent type="about" />
-        <AboutBottommiddle/>
-      {/* <AboutNavbarBottom /> */}
-      <AboutTimeline/>
-      <Countupcomponent/>
+     <Navbarcomponent type="faq" />
+        <PrivacypolicyBottomMiddle/>
+        <PrivacyPolicyContents/>
       <Contactus/>
     <Scrolltotop />
 <Footer />

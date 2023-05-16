@@ -58,17 +58,17 @@ function Footer() {
                 Contact Us
               </a>
               <a
-                href="#"
+                href="/faqs"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 FAQ’s
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 Terms of Use
-              </a>
+              </a> */}
               <a
-                href="#"
+                href="/privacypolicy"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 Privacy Policy
               </a>

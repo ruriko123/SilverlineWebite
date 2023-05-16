@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef , useState } from "react";
 import "rsuite/dist/rsuite.min.css";
 import { Panel, Placeholder } from "rsuite";
 import "./NavbarBottom.scss";
 import { Animation, List, Whisper, Button, ButtonToolbar } from "rsuite";
+import VisibilitySensor from 'react-visibility-sensor';
+
+
 const Overlay = React.forwardRef(({ style, onClose, ...rest }, ref) => {
   const styles = {
     ...style,
@@ -27,40 +30,27 @@ const Overlay = React.forwardRef(({ style, onClose, ...rest }, ref) => {
   );
 });
 function NavbarBottom() {
-  const [visible, setVisible] = useState(false);
+const visible = useRef(true);
 
-  useEffect(() => {
-    let timeout1;
-    if (!visible) {
-      timeout1 = setTimeout(() => {
-        setVisible(true);
-      }, 600);
-    }
 
-    return () => {
-      clearTimeout(timeout1);
-      // setVisible(false);
-    };
-  }, []);
 
   return (
     <div className="d-flex justify-content-center m-2 align-items-center place-items-center h-screen">
       <Panel shaded={true} bodyFill={false} className="rounded">
         <Animation.Slide
-          transitionAppear={true}
-          in={visible}
+          transitionAppear={false}
+          in={visible.current}
           placement="bottom"
-          timeout={4400}>
+          timeout={1000}>
           <h1 className="font text-4xl font-bold tracking-tightsm:text-6xl d-flex align-items-center justify-content-center  text-slate-900  ">
             Text Effect 1
           </h1>
         </Animation.Slide>
-
         <Animation.Slide
-          transitionAppear={true}
-          in={visible}
+          transitionAppear={false}
+          in={visible.current}
           placement="right"
-          timeout={4400}>
+          timeout={1000}>
           <div
             className="p-1 m-3 mb-3 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
             role="alert">
@@ -68,12 +58,11 @@ function NavbarBottom() {
             Storage Solutions
           </div>
         </Animation.Slide>
-
         <Animation.Slide
-          transitionAppear={true}
-          in={visible}
+          transitionAppear={false}
+          in={visible.current}
           placement="left"
-          timeout={4400}>
+          timeout={1000}>
           <div
             className="p-1 m-2 mb-3 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800"
             role="alert">
@@ -81,7 +70,6 @@ function NavbarBottom() {
             Startups, e-Commerce & Companies
           </div>
         </Animation.Slide>
-
         <ButtonToolbar
           style={{
             background: "transparent",
