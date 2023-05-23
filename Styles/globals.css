@@ -1,3 +1,20 @@
 /* @import 'tailwindcss/base'; */
 /* @import 'tailwindcss/components'; */
 @import 'tailwindcss/utilities';
+
+
+
+*{
+    font-family: 'Poppins',sans-serif !important; 
+}
+
+.grecaptcha-badge {
+    width: 70px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+    left: 4px !important;
+  }
+  
+  .grecaptcha-badge:hover {
+    width: 256px !important;
+  }

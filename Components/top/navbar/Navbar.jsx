@@ -29,7 +29,7 @@ function Navbarcomponent({type}) {
                      <Nav.Link  as={Link} className="m-auto" href="/about">About</Nav.Link>
                    }
                      {!(type==="services") && 
-                    <Nav.Link  as={Link} className="m-auto" href="/pricing">Services</Nav.Link>
+                    <Nav.Link  as={Link} className="m-auto" href="/services">Services</Nav.Link>
                    }
                    {!(type==="contact") && 
                     <Nav.Link  as={Link} className="m-auto" href="/contact">Contact</Nav.Link>

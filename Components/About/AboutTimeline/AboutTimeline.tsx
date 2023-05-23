@@ -29,9 +29,9 @@ function AboutTimeline() {
     <Timeline.Item>
       <p  className="normal-case secondarytitle text-gray-400">We showcase our products</p>
     </Timeline.Item>
-    <Timeline.Item>
+    {/* <Timeline.Item>
       <p  className="normal-case secondarytitle text-gray-400">Product pricings are presented</p>
-    </Timeline.Item>
+    </Timeline.Item> */}
     <Timeline.Item dot={<Search />}>
     <p className="capitalize toptitle text-indigo-500 text-bold text-3xl sm:text-2xl  underline underline-offset-8  decoration-teal-500  hover:decoration-wavy decoration-2">You pick the product/products</p>
     </Timeline.Item>

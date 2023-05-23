@@ -2,13 +2,16 @@
   "name": "silverlinewebsite",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://templatetwo.silverlinepos.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node server.js",
+    "startserver": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
+    "@carefully-coded/react-text-gradient": "^1.0.6",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.0",
@@ -17,8 +20,12 @@
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
+    "moment": "^2.29.4",
     "next": "13.4.1",
+    "next-recaptcha-v3": "^1.1.5",
+    "nodemailer": "^6.9.2",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.4",
@@ -26,6 +33,7 @@
     "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-phone-number-input": "^3.2.23",
     "react-scroll-to-top": "^3.0.0",
     "react-scroll-up": "^1.4.0",
     "react-visibility-sensor": "^5.1.1",
@@ -35,5 +43,8 @@
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4",
     "use-count-up": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.8"
   }
 }

@@ -33,7 +33,7 @@ function AboutNavbarBottom() {
           placement="bottom"
           timeout={4400}>
           <h1 className="font text-4xl font-bold tracking-tightsm:text-6xl d-flex align-items-center justify-content-center text-slate-900  ">
-            About Us
+            About Us  
           </h1>
         </Animation.Slide>
 

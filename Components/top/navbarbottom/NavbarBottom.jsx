@@ -1,9 +1,12 @@
-import React, { useRef , useState } from "react";
+import React, {  useState } from "react";
 import "rsuite/dist/rsuite.min.css";
 import { Panel, Placeholder } from "rsuite";
 import "./NavbarBottom.scss";
 import { Animation, List, Whisper, Button, ButtonToolbar } from "rsuite";
 import VisibilitySensor from 'react-visibility-sensor';
+import FancyText from '@carefully-coded/react-text-gradient';
+              
+
 
 
 const Overlay = React.forwardRef(({ style, onClose, ...rest }, ref) => {
@@ -30,43 +33,48 @@ const Overlay = React.forwardRef(({ style, onClose, ...rest }, ref) => {
   );
 });
 function NavbarBottom() {
-const visible = useRef(true);
+const visible = true;
 
 
 
   return (
-    <div className="d-flex justify-content-center m-2 align-items-center place-items-center h-screen">
-      <Panel shaded={true} bodyFill={false} className="rounded">
+    <div className="d-flex text-center justify-content-center m-2 align-items-center place-items-center h-screen">
+      <Panel shaded={true} bodyFill={true}  className="rounded">
         <Animation.Slide
           transitionAppear={false}
-          in={visible.current}
+          in={visible}
           placement="bottom"
           timeout={1000}>
-          <h1 className="font text-4xl font-bold tracking-tightsm:text-6xl d-flex align-items-center justify-content-center  text-slate-900  ">
-            Text Effect 1
-          </h1>
+           <FancyText className="maintextanimation  font text-2xl font-black tracking-tightsm:text-6xl d-flex align-items-center justify-content-center  text-slate-900  "
+ gradient={{ from: '#3BEEDD', to: '#2194B6' }}
+ animateTo={{ from: '#6DEDD0', to: '#7AE23A' }}
+ animate
+ animateDuration={1000}
+    >
+      Silverline
+    </FancyText>
         </Animation.Slide>
         <Animation.Slide
           transitionAppear={false}
-          in={visible.current}
+          in={visible}
           placement="right"
           timeout={1000}>
           <div
-            className="p-1 m-3 mb-3 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
+            className="p-1 m-3 mb-3 text-amber-600   text-base drop-shadow-2xl testshadowclass	font-black dark:text-red-800"
             role="alert">
-            <span className="font-medium">Premium </span> Storage Space and
+            <span className="font-black ">Premium </span> Storage Space and
             Storage Solutions
           </div>
         </Animation.Slide>
         <Animation.Slide
           transitionAppear={false}
-          in={visible.current}
+          in={visible}
           placement="left"
           timeout={1000}>
           <div
-            className="p-1 m-2 mb-3 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800"
+            className="p-1 m-3 mb-3 text-pink-600   text-base drop-shadow-2xl testshadowclass	font-black dark:text-red-800"
             role="alert">
-            <span className="font-medium">Built for</span> Individuals,
+            <span className="font-black">Built for</span> Individuals,
             Startups, e-Commerce & Companies
           </div>
         </Animation.Slide>
