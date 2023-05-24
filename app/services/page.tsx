@@ -29,7 +29,7 @@ export default function Services() {
         </div>
       </div>
       <div className="main vh-50" data-theme="dark">
-        <ServicesTopmiddle toptext={"Explore Our Services"} bottomtext={"Carefully crafted for a hassle-free and affordable experience."}/>
+        <ServicesTopmiddle toptext={"Explore Our Services"} bottomtext={"Carefully  put together for a hassle-free and affordable experience."}/>
       </div>
       <div className="main vh-50" data-theme="dark">
         <Bottommiddle />

@@ -9,24 +9,13 @@ import { FaRegBuilding } from "react-icons/fa";
 import { MdOutlineSoupKitchen } from "react-icons/md";
 import { Carousel } from "rsuite";
 import Image from "next/image";
-
-import Dalle from "../../public/third.jpg";
-import TableManagement from "../../public/TableManagement.jpg";
-import billingAndOrderManagement from "../../public/billingAndOrderManagement.png";
-import billingAndOrderManagement2 from "../../public/billingAndOrderManagement2.png";
 import inventoryDistribution from "../../public/inventoryDistribution.png";
 import fndCosting from "../../public/fndCosting.png";
 import fndCosting2 from "../../public/fndCosting2.png";
-import centralKitchen from "../../public/centralKitchen.png";
-import centralKitchen2 from "../../public/centralKitchen2.png";
-import kitchendisplay from "../../public/kitchendisplay.png";
-import webPortal from "../../public/webPortal.png";
-import webPortal2 from "../../public/webPortal2.png";
 import frontoffice from "../../public/frontoffice.png";
 import frontoffice2 from "../../public/frontoffice2.png";
 import restaurantManagement from "../../public/restaurantManagement.jpg";
 import restaurantManagement2 from "../../public/restaurantManagement2.jpg";
-
 import accounting from "../../public/accounting.png";
 import accounting2 from "../../public/accounting2.png";
 import housekeeping1 from "../../public/housekeeping1.png";
@@ -40,52 +29,8 @@ function HotelServicesBottomMiddle() {
       shaded
       className="mb-5 divide-y  divide-blue-200 h-fit mt-5 d-flex justify-content-center flex-column align-items-center">
       <div className="card-group w-100  ">
-        <div className="card border-dark bg-gray-800 m-3  rounded">
-          <Carousel
-            autoplay
-            className="custom-slider w-auto h-auto bg-gray-800  mt-3 "
-            shape="bar"
-            as="div">
-            <Image
-              placeholder="empty"
-              width="0"
-              height="0"
-              sizes="auto"
-              className="w-2/3 h-auto  d-flex justify-center align-middle bg-gray-800 "
-              src={frontoffice}
-              priority={true}
-              alt="experience"
-            />
-            <Image
-              placeholder="empty"
-              width="0"
-              height="0"
-              sizes="auto"
-              className="w-2/3 h-auto d-flex justify-center align-middle bg-gray-800 "
-              src={frontoffice2}
-              priority={true}
-              alt="experience"
-            />
-          </Carousel>
-          <div className="card-body bg-gray-800 rounded-xl bg-gradient-to-br from-[#6025F5] to-[#FF5555]  text-white transition duration-200 hover:shadow-lg hover:shadow-[#6025F5]/50">
-            <h4 className="card-title">
-              <RiHotelLine />
-            </h4>
-            <p className="card-text text-emerald-500 font-black text-[22px] leading-7 mb-1 text-center">
-              Front Office
-            </p>
-            <p className="card-text text-center mt-3 ">
-              <small className="text-muted  d-flex justify-center hover:bg-[#F2ECE7] font-medium tracking-wide text-center hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80">
-                Enhance your hotel or hospitality business operations with our
-                comprehensive Front Office software, providing a user-friendly
-                platform for efficient management of guest check-ins,
-                reservations, room assignments, and other essential front desk
-                tasks, enabling you to deliver exceptional customer service and
-                optimize guest experiences.
-              </small>
-            </p>
-          </div>
-        </div>
+    
+
         <div className="card border-dark bg-gray-800 rounded   m-3 ">
           <Carousel
             autoplay
@@ -97,7 +42,58 @@ function HotelServicesBottomMiddle() {
               width="0"
               height="0"
               sizes="auto"
-              className="w-2/3  d-flex justify-center align-middle  bg-gray-800 "
+              className=" object-fit  d-flex justify-center align-middle  bg-gray-800 imagecontainer "
+              src={frontoffice}
+              priority={true}
+              alt="experience"
+            />
+            <Image
+              placeholder="empty"
+              width="0"
+              height="0"
+              sizes="auto"
+              className=" object-fit d-flex justify-center align-middle  bg-gray-800 imagecontainer "
+              src={frontoffice2}
+              priority={true}
+              alt="experience"
+            />
+          </Carousel>
+          <div className="card-body rounded-xl bg-gray-800 bg-gradient-to-br from-[#6025F5] to-[#FF5555]  text-white transition duration-200 hover:shadow-lg hover:shadow-[#6025F5]/50">
+            <h4 className="card-title">
+            <RiHotelLine />
+            </h4>
+            <p className="card-text text-emerald-500 font-black text-[22px] leading-7 mb-1  text-center">
+            Front Office
+            </p>
+            <p className="card-text text-center mt-3 ">
+              <small className="text-muted  d-flex justify-center hover:bg-[#F2ECE7] font-medium tracking-wide text-center hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80">
+              Enhance your hotel or hospitality business operations with our
+                comprehensive Front Office software, providing a user-friendly
+                platform for efficient management of guest check-ins,
+                reservations, room assignments, and other essential front desk
+                tasks, enabling you to deliver exceptional customer service and
+                optimize guest experiences.
+              </small>
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+        <div className="card border-dark bg-gray-800 rounded   m-3 ">
+          <Carousel
+            autoplay
+            className="custom-slider w-auto h-auto bg-gray-800  mt-3 "
+            shape="bar"
+            as="div">
+            <Image
+              placeholder="empty"
+              width="0"
+              height="0"
+              sizes="auto"
+              className="w-2/3  d-flex justify-center align-middle  bg-gray-800 imagecontainer "
               src={restaurantManagement}
               priority={true}
               alt="experience"
@@ -107,7 +103,7 @@ function HotelServicesBottomMiddle() {
               width="0"
               height="0"
               sizes="auto"
-              className="h-auto d-flex justify-center align-middle  bg-gray-800 "
+              className="h-auto d-flex justify-center align-middle  bg-gray-800 imagecontainer "
               src={restaurantManagement2}
               priority={true}
               alt="experience"
@@ -143,7 +139,7 @@ function HotelServicesBottomMiddle() {
             width="0"
             height="0"
             sizes="auto"
-            className="h-3/5 d-flex justify-center align-middle m-auto mt-3 bg-gray-800  "
+            className="h-3/5 d-flex justify-center align-middle m-auto mt-3 bg-gray-800 imagecontainer  "
             src={inventoryDistribution}
             priority={true}
             alt="experience"
@@ -168,10 +164,13 @@ function HotelServicesBottomMiddle() {
           </div>
         </div>
 
-        <div className="card border-dark bg-gray-800 rounded  m-3 ">
+
+
+
+        <div className="card border-dark bg-gray-800 rounded   m-3 ">
           <Carousel
             autoplay
-            className="custom-slider w-auto h-auto mt-3 bg-gray-800 "
+            className="custom-slider w-auto h-auto bg-gray-800  mt-3 "
             shape="bar"
             as="div">
             <Image
@@ -179,7 +178,7 @@ function HotelServicesBottomMiddle() {
               width="0"
               height="0"
               sizes="auto"
-              className="d-flex justify-center align-middle  bg-gray-800 object-cover"
+              className=" object-fit  d-flex justify-center align-middle  bg-gray-800 imagecontainer "
               src={housekeeping1}
               priority={true}
               alt="experience"
@@ -189,7 +188,7 @@ function HotelServicesBottomMiddle() {
               width="0"
               height="0"
               sizes="auto"
-              className="d-flex justify-center align-middle bg-gray-800 object-fit "
+              className=" object-fit d-flex justify-center align-middle  bg-gray-800 imagecontainer "
               src={housekeeping2}
               priority={true}
               alt="experience"
@@ -197,10 +196,10 @@ function HotelServicesBottomMiddle() {
           </Carousel>
           <div className="card-body rounded-xl bg-gray-800 bg-gradient-to-br from-[#6025F5] to-[#FF5555]  text-white transition duration-200 hover:shadow-lg hover:shadow-[#6025F5]/50">
             <h4 className="card-title">
-              <FaRegBuilding />
+            <RiHotelLine />
             </h4>
             <p className="card-text text-emerald-500 font-black text-[22px] leading-7 mb-1  text-center">
-              House Keeping Module
+            House Keeping Module
             </p>
             <p className="card-text text-center mt-3 ">
               <small className="text-muted  d-flex justify-center hover:bg-[#F2ECE7] font-medium tracking-wide text-center hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80">
@@ -213,6 +212,7 @@ function HotelServicesBottomMiddle() {
             </p>
           </div>
         </div>
+
       </div>
 
       <div className="card-group  mt-5">
@@ -227,7 +227,7 @@ function HotelServicesBottomMiddle() {
               width="0"
               height="0"
               sizes="auto"
-              className="w-2/3 h-2/3 d-flex justify-center align-middle bg-gray-800 "
+              className="w-2/3 h-2/3 d-flex justify-center align-middle bg-gray-800 imagecontainer "
               src={fndCosting}
               priority={true}
               alt="experience"
@@ -237,7 +237,7 @@ function HotelServicesBottomMiddle() {
               width="0"
               height="0"
               sizes="auto"
-              className="w-2/3 h-2/3 d-flex justify-center align-middle bg-gray-800   "
+              className="w-2/3 h-2/3 d-flex justify-center align-middle bg-gray-800 imagecontainer  "
               src={fndCosting2}
               priority={true}
               alt="experience"
@@ -272,7 +272,7 @@ function HotelServicesBottomMiddle() {
               width="0"
               height="0"
               sizes="auto"
-              className="w-2/3 h-2/3 d-flex justify-center align-middle bg-gray-800 "
+              className="w-2/3 h-2/3 d-flex justify-center align-middle bg-gray-800 imagecontainer "
               src={accounting}
               priority={true}
               alt="experience"
@@ -282,7 +282,7 @@ function HotelServicesBottomMiddle() {
               width="0"
               height="0"
               sizes="auto"
-              className="w-2/3 h-2/3 d-flex justify-center align-middle bg-gray-800  "
+              className="w-2/3 h-2/3 d-flex justify-center align-middle bg-gray-800 imagecontainer  "
               src={accounting2}
               priority={true}
               alt="experience"

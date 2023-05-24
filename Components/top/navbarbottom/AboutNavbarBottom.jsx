@@ -45,8 +45,7 @@ function AboutNavbarBottom() {
           <div
             className="p-1 m-3 mb-3 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
             role="alert">
-            <span className="font-medium">Premium </span> Storage Space and
-            Reinventing Storage Space
+            <span className="font-black">Premium </span> Integrated Point Of Sale Software Solutions
           </div>
         </Animation.Slide>
 
@@ -58,7 +57,7 @@ function AboutNavbarBottom() {
           <div
             className="break-normal p-1 m-2 mb-3 text-sm text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-200 dark:text-blue-800"
             role="alert">
-            <span className="font-medium">We provide quick, convenient and hassle-free home and business storage solutions at our secure and easy-to-access storage facility.</span>
+            <span className="font-medium">With years of industry expertise, we have developed advanced software solutions that optimize business operations, elevate customer experiences, and fuel sustainable growth.</span>
           </div>
         </Animation.Slide>
 

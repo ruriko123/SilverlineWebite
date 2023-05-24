@@ -11,6 +11,9 @@ import "@styles/globals.css";
 import Bottommiddle from "@/Components/middle/Bottommiddle";
 import Footer from "@/Components/footer/Footer";
 import Scrolltotop from "@/Components/scrolltotop/Scrolltotop";
+import 'rsuite/dist/rsuite.min.css';
+
+
 
 export default function Home() {
   return (

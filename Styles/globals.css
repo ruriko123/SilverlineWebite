@@ -6,6 +6,7 @@
 
 *{
     font-family: 'Poppins',sans-serif !important; 
+    --bs-card-bg: rgb(31 41 55) !important;
 }
 
 .grecaptcha-badge {
@@ -13,8 +14,18 @@
     overflow: hidden !important;
     transition: all 0.3s ease !important;
     left: 4px !important;
+    visibility: hidden;
   }
   
   .grecaptcha-badge:hover {
     width: 256px !important;
   }
+
+.custom-slider{
+  background-color: rgb(31 41 55) !important;
+  overflow:hidden;
+}
+
+.rs-carousel-label-wrapper{
+  visibility:hidden;
+}

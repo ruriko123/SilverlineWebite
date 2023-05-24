@@ -5,13 +5,13 @@ function Accordions() {
         <main className="container m-auto">
             <details>
                 <summary role="button" className="secondary">Reputation</summary>
-                <p>A company with a good track record and positive reviews from past customers.</p>
+                <p className="text-gray-500">A company with a good track record and positive reviews from past customers.</p>
             </details>
             <details>
-                <summary role="button" className="secondary">Experience & Insurance</summary>
+                <summary role="button" className="secondary">Experience & Trust</summary>
                 <ul>
-                    <li>A company with experience in the type of roofing you need and in your specific location.</li>
-                    <li>Proper insurance to protect you and your property in case of accidents or damage.</li>
+                    <li className="text-gray-500">A company with experience in the type of software you need.</li>
+                    <li className="text-gray-500">Products that are used by many of our clients.</li>
                 </ul>
             </details>
         </main>

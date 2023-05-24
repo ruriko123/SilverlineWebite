@@ -24,7 +24,7 @@ function Countupcomponent() {
   return (
       
       <div className="mt-5 card-group underline underline-offset-8  decoration-pink-500  hover:decoration-dashed decoration-4">
-        <div className="card border-light m-2 rounded">
+        <div className="card border-light m-2 rounded about-card">
           <div className=" sm:text-xs d-flex justify-content-center align-item-center gap-3 flex-row mx-auto card-body rounded-xl bg-gradient-to-br from-[#6025F5] to-[#FF5555]  text-white transition duration-200 hover:shadow-lg hover:shadow-[#6025F5]/50 w-full capitalize ">
 
 

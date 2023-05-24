@@ -23,11 +23,14 @@ const Overlay = React.forwardRef(({ style, onClose, ...rest }, ref) => {
   };
   return (
     <div {...rest} style={styles} ref={ref}>
+
       <List hover>
-        <List.Item href="/service1">Service1</List.Item>
-        <List.Item href="/service2">Service2</List.Item>
-        <List.Item href="/service3">Service3</List.Item>
-        <List.Item href="/service4">Service4</List.Item>
+        <List.Item >Hotel Management</List.Item>
+        <List.Item>Restaurant Management</List.Item>
+        <List.Item>Retail Management</List.Item>
+        <List.Item>Banquet Management</List.Item>
+        <List.Item>Cloud Kitchen Platforms</List.Item>
+        <List.Item>Delivery Services</List.Item>
       </List>
     </div>
   );
@@ -62,8 +65,7 @@ const visible = true;
           <div
             className="p-1 m-3 mb-3 text-amber-600   text-base drop-shadow-2xl testshadowclass	font-black dark:text-red-800"
             role="alert">
-            <span className="font-black ">Premium </span> Storage Space and
-            Storage Solutions
+      <span className="font-black">Premium </span> Integrated Point Of Sale Software Solutions
           </div>
         </Animation.Slide>
         <Animation.Slide
@@ -74,8 +76,8 @@ const visible = true;
           <div
             className="p-1 m-3 mb-3 text-pink-600   text-base drop-shadow-2xl testshadowclass	font-black dark:text-red-800"
             role="alert">
-            <span className="font-black">Built for</span> Individuals,
-            Startups, e-Commerce & Companies
+            <span className="font-black">Built for</span> Restaurants, Hotels,
+            Retail Shops, Trading Companies, and Delivery Services
           </div>
         </Animation.Slide>
         <ButtonToolbar

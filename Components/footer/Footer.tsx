@@ -1,7 +1,6 @@
+import Link from "next/link";
 import React from "react";
-import { Divider } from 'rsuite';
-
-
+import { Divider } from "rsuite";
 
 
 function Footer() {
@@ -24,26 +23,26 @@ function Footer() {
                 Services
               </div>
               {/* Links */}
-              <a
-                href="#"
+              <Link
+                href="/hotelManagement"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Installation
-              </a>
-              <a
-                href="#"
+                Hotel Management
+              </Link>
+              <Link
+                href="/restaurantManagement"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Release Notes
-              </a>
-              <a
-                href="#"
+                Restaurant Management
+              </Link>
+              <Link
+                href="/retailManagement"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Upgrade Guide
-              </a>
-              <a
-                href="#"
+                Retail Management
+              </Link>
+              <Link
+                href="/banquetManagement"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                Using with Preprocessors
-              </a>
+                Banquet Management
+              </Link>
             </div>
             {/* Col-2 */}
             <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
@@ -52,26 +51,26 @@ function Footer() {
                 Support
               </div>
               {/* Links */}
-              <a
+              <Link
                 href="/contact"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 Contact Us
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/faqs"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 FAQ’s
-              </a>
+              </Link>
               {/* <a
                 href="#"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 Terms of Use
               </a> */}
-              <a
+              <Link
                 href="/privacypolicy"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 Privacy Policy
-              </a>
+              </Link>
             </div>
             {/* Col-3 */}
             <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
@@ -97,11 +96,21 @@ function Footer() {
                 Community
               </div>
               {/* Links */}
-              <a
-                href="#"
+
+              {/* <a
+                href="https://www.facebook.com/people/SilverLine-System-Integrators-Pvt-Ltd/100057659071301"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                 Facebook
-              </a>
+              </a> */}
+
+              <Link  className="link-item my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700" target="_blank" href="https://www.facebook.com/people/SilverLine-System-Integrators-Pvt-Ltd/100057659071301">
+               
+                  Facebook
+
+              </Link>
+
               <a
                 href="#"
                 className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
@@ -119,7 +128,7 @@ function Footer() {
               </a>
             </div>
           </div>
-          <Divider className="mb-1"></Divider>  
+          <Divider className="mb-1"></Divider>
           {/* Copyright Bar */}
           <div className="pt-2">
             <div
@@ -127,13 +136,21 @@ function Footer() {
       border-t border-gray-500 text-gray-400 text-sm 
       flex-col md:flex-row max-w-6xl">
               <div className="mt-2">
-                © Copyright <span className="text-medium font-bold">SilverLine System Integrators Pvt. Ltd.</span> All Rights Reserved.
+                © Copyright{" "}
+                <span className="text-medium font-bold">
+                  SilverLine System Integrators Pvt. Ltd.
+                </span>{" "}
+                All Rights Reserved.
               </div>
               {/* Required Unicons (if you want) */}
               <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-                <a href="#" className="w-6 mx-1">
+                {/* <a href="#" className="w-6 mx-1">
                   <i className="uil uil-facebook-f" />
-                </a>
+                </a> */}
+                <Link target="_blank" className="link-item w-6 mx-1" href="https://www.facebook.com/people/SilverLine-System-Integrators-Pvt-Ltd/100057659071301">
+                  <i className="uil uil-facebook-f" />
+              </Link>
+
                 <a href="#" className="w-6 mx-1">
                   <i className="uil uil-twitter-alt" />
                 </a>

@@ -31,7 +31,7 @@ function RetailServicesBottomMiddle() {
             width="0"
             height="0"
             sizes="auto"
-            className="w-2/3  d-flex justify-center align-middle  bg-gray-800 "
+            className="w-2/3  d-flex justify-center align-middle  bg-gray-800 imagecontainer"
             src={salespro}
             priority={true}
             alt="experience"
@@ -41,7 +41,7 @@ function RetailServicesBottomMiddle() {
             width="0"
             height="0"
             sizes="auto"
-            className="h-auto d-flex justify-center align-middle  bg-gray-800 "
+            className="h-auto d-flex justify-center align-middle  bg-gray-800 imagecontainer"
             src={salespro2}
             priority={true}
             alt="experience"

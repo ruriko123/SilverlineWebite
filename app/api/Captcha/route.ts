@@ -34,7 +34,6 @@ const sendMail = async (
   };
   transporter.sendMail(mailOptions, async function (error, info) {
     if (error) {
-      console.log(error)
       transporter.close();
       return;
     }
@@ -100,7 +99,6 @@ export async function POST(req: Request, res: NextApiResponse<any>) {
       });
     }
   } catch (error) {
-    console.log("internal error", error);
     NextResponse.json({
       status: "error",
       message: "Something went wrong, please try again!!!",

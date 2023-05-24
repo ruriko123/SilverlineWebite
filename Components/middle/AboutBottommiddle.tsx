@@ -19,7 +19,7 @@ function AboutBottommiddle() {
       <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
         <h1 className="sm:text-3xl text-4xl  title-font mb-2 text-rose-600 font-bold capitalize"> About Us</h1>
         <p className="lg:w-1/2 w-full leading-relaxed text-base text-emerald-600 ">
-        We provide quick, convenient and hassle-free home and business storage solutions at our secure and easy-to-access storage facility.</p>
+        With years of industry expertise, we have developed advanced software solutions that optimize business operations, elevate customer experiences, and fuel sustainable growth.</p>
       </div>
       <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
 

@@ -35,7 +35,7 @@ function BanquetServicesBottomMiddle() {
             width="0"
             height="0"
             sizes="auto"
-            className="w-2/3  d-flex justify-center align-middle  bg-gray-800 "
+            className="w-2/3  d-flex justify-center align-middle  bg-gray-800 imagecontainer "
             src={banquet}
             priority={true}
             alt="experience"
@@ -45,7 +45,7 @@ function BanquetServicesBottomMiddle() {
             width="0"
             height="0"
             sizes="auto"
-            className="h-auto d-flex justify-center align-middle  bg-gray-800 "
+            className="h-auto d-flex justify-center align-middle  bg-gray-800 imagecontainer "
             src={banquet2}
             priority={true}
             alt="experience"
@@ -55,7 +55,7 @@ function BanquetServicesBottomMiddle() {
             width="0"
             height="0"
             sizes="auto"
-            className="h-auto d-flex justify-center align-middle  bg-gray-800 "
+            className="h-auto d-flex justify-center align-middle  bg-gray-800 imagecontainer"
             src={banquet3}
             priority={true}
             alt="experience"

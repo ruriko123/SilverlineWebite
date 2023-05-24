@@ -10,6 +10,12 @@ import axios from "axios";
 moment().format();
  
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
+
 
 const Form = () => {
 
@@ -24,6 +30,9 @@ const Form = () => {
   const [validPhone, setValidPhone] = useState<any>(false);
   const [contactDate, setcontactDate] = useState<any>("");
   const [contactTime, setcontactTime] = useState<any>("");
+  const [Submitted, setSubmitted] = useState<any>(false);
+
+
 
 
 
@@ -54,32 +63,40 @@ const Form = () => {
   };
 
 
-  // const [captchaToken, setcaptchaToken] = useState("");
+  const successtoast = (msg:string)=>{
+    toast.success(msg, {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      toastId: "successToast"
+      });
+  }
 
-  // useEffect(() => {
-  //   if(!executeRecaptcha){
-  //     return;
-  //   };
-  //   const gettoken = async()=>{
-  //       console.log(executeRecaptcha)
-        
-  //       const token = await executeRecaptcha("form_submit");
-  //       setcaptchaToken(token);
-  //     };
-  //     gettoken();
-  //   return () => {
-  //     setcaptchaToken("");
-  //   };
-  // }, [executeRecaptcha]);
-  
+  const errorToast = (msg:string)=>{
+    toast.error(msg, {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      toastId: "errorToast"
+      });
+  }
 
   const handleSubmit = async (e:any) => {
+    setSubmitted(true);
     e.preventDefault();
     const contactFormattedTime = moment(contactTime||"14:00",'hh:mm').format("hh:mm a");
     const token =  await executeRecaptcha("form_submit");
     let jsondata = {gRecaptchaToken:token,FirstName:FirstName, LastName:LastName, email:email,Phone:Phone, contactDate:contactDate, contactTime:contactTime,contactFormattedTime:contactFormattedTime}
-    console.log(jsondata);
-   
     try {
       const res = await axios.post(
         "/api/Captcha",
@@ -90,14 +107,20 @@ const Form = () => {
           },
         },
       );
-      if(res?.data?.success){
-        console.log(res.data)
+      if((res?.data?.status )==="success"){
+        setSubmitted(false);
+        successtoast("The form has been submitted.");
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPhone("");
       } else {
-        //show error
+        errorToast("Could not submit the form. Please try again later.");
+        setSubmitted(false);
       }
     } catch (e) {
-
-      console.log(e);
+      errorToast("Could not submit the form. Please try again later.");
+      setSubmitted(false);
     };
 
   };
@@ -124,6 +147,7 @@ const Form = () => {
               type="text"
               id="firstname"
               name="firstname"
+              value={FirstName}
               placeholder="First name"
               required
               // value={FirstName}
@@ -143,7 +167,7 @@ const Form = () => {
               name="lastname"
               placeholder="Last name"
               required
-              // value={LastName}
+              value={LastName}
               onChange={(e) => {
                 handleLastName(e);
               }}
@@ -159,7 +183,7 @@ const Form = () => {
               name="email"
               placeholder="Email address"
               required
-              // value={email}
+              value={email}
               onChange={(e) => {
                 handleemail(e);
               }}
@@ -211,6 +235,7 @@ const Form = () => {
               type="time"
               id="time"
               name="time"
+             
               onChange={(e) => {
                 handlecontactTime(e);
               }}
@@ -218,7 +243,7 @@ const Form = () => {
           </label>
         </div>
 
-        <button
+       {!Submitted &&  <button
           className="primary"
           data-tooltip="Submit"
           data-placement="top"
@@ -226,8 +251,20 @@ const Form = () => {
           disabled={!validPhone}
         >
           Submit
-        </button>
+        </button>}
       </form>
+      <ToastContainer
+position="top-right"
+autoClose={4000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss={false}
+draggable
+pauseOnHover
+theme="dark"
+/>
     </div>
   );
 };

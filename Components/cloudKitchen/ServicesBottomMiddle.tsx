@@ -25,7 +25,7 @@ function CloudKitchenServicesBottomMiddle() {
             width="0"
             height="0"
             sizes="auto"
-            className="w-2/3 h-3/5 d-flex justify-center align-middle m-auto mt-3 bg-gray-600 "
+            className="w-2/3 h-3/5 d-flex justify-center align-middle m-auto mt-3 bg-gray-800 imagecontainer  "
             src={Dalle}
             priority={true}
             alt="experience"
